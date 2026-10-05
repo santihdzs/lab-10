@@ -68,9 +68,10 @@ dependencies {
     implementation(libs.okhttp.sse)
     implementation(libs.androidx.work.runtime)
 
-    // Imágenes: Coil las baja y las pinta, con el mismo cliente que todo lo demás
+    // Imágenes: Coil las baja y las pinta; ExifInterface lee cómo venía girada la foto
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
+    implementation(libs.androidx.exifinterface)
 
     // Hilt (Práctica 9): la librería, el generador de código, y sus piezas para ViewModel y WorkManager
     implementation(libs.hilt.android)
